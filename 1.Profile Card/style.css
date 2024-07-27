@@ -1,0 +1,121 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff3c0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.profile-card__image-container {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.profile-card__info {
+  margin-bottom: 14px;
+}
+
+.profile-card__header {
+  margin-bottom: 16px;
+}
+
+.profile-card__heading {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.profile-card__subheading {
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.profile-card__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 14px;
+}
+
+.icon__wrapper {
+  width: 42px;
+  height: 42px;
+}
+
+.icon__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profile-card__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn {
+  padding: 12px 40px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.btn__primary {
+  background-color: #41abf1;
+  border: 1px solid #41abf1;
+  color: #ffffff;
+}
+
+.btn__primary:hover {
+  background-color: #61baf5;
+}
+
+.btn__secondary {
+  border: 1px solid #ffffff;
+}
+
+.btn__secondary:hover {
+  background-color: #eee4e4;
+}

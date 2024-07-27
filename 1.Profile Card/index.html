@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="profile-card__header">
+      <h1 class="profile-card__title">Profile Card</h1>
+    </header>
+    <main class="profile-card">
+      <figure class="profile-card__image-container">
+        <img
+          class="profile-card__image"
+          src="./profile.jpeg"
+          alt="Profile picture"
+        />
+      </figure>
+
+      <section class="profile-card__info">
+        <div class="profile-card__header">
+          <h1 class="profile-card__heading">Sita Thapa</h1>
+
+          <a
+            class="profile-card__subheading"
+            href="mailto:hemantbasnet61@gmail.com"
+            >hemantbasnet61@gmail.com</a
+          >
+        </div>
+        <div aria-label="Social media icons" class="icon icon__container">
+          <div class="icon__wrapper">
+            <img class="icon__image" src="./facebook.png" alt="Facebook" />
+          </div>
+          <div class="icon__wrapper">
+            <img class="icon__image" src="./instagram.png" alt="Instagram" />
+          </div>
+          <div class="icon__wrapper">
+            <img class="icon__image" src="./linkedin.png" alt="LinkedIn" />
+          </div>
+          <div class="icon__wrapper">
+            <img class="icon__image" src="./twitter.png" alt="Twitter" />
+          </div>
+          <div class="icon__wrapper">
+            <img class="icon__image" src="./discord.png" alt="Discord" />
+          </div>
+        </div>
+        <p class="profile-card__description">
+          My name is Sita Thapa, and I am the Lead Software Engineer at Techno
+          Sources Pvt. Ltd. With over 10 years of experience in software
+          development, I specialize in full-stack web development and have
+          strong expertise in cloud computing.
+        </p>
+      </section>
+
+      <section class="profile-card__actions">
+        <button class="btn btn__primary">Follow</button>
+        <button class="btn btn__secondary">Message</button>
+      </section>
+    </main>
+  </body>
+</html>
