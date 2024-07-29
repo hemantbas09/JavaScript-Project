@@ -11,28 +11,40 @@ body {
 }
 
 .product {
-  max-width: 400px;
+  max-width: 800px;
   margin: auto;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__image-container {
+  width: 400px;
+  height: 400px;
+  padding: 12px;
 }
 
 .product__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .product__details {
   display: flex;
+  flex-shrink: 185;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 24px;
   background-color: rgb(250, 249, 249);
   padding: 16px;
+  flex-grow: 1;
 }
 
 .product__brand {
@@ -49,6 +61,37 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-price__final {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.product-price__discount {
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(21, 131, 235);
+  background-color: rgb(124, 191, 202);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.product-price__original {
+  font-size: 20px;
+  font-weight: 600;
+  color: #cac4c4;
+  text-decoration: line-through;
+}
+
 .product__description {
   font-size: 14px;
   line-height: 24px;
@@ -57,25 +100,33 @@ body {
   text-align: justify;
 }
 
-.product__specifications {
+.product-size {
+}
+
+.product-size__heading {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.product-size__list {
   display: flex;
   align-items: center;
   gap: 10px;
   text-align: center;
 }
 
-.product__specifications-size {
+.product-size__item {
   list-style: none;
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
 }
 
-.product__specifications-size:hover {
-  background-color: rgb(235, 228, 228);;
+.product-size__item:hover {
+  background-color: rgb(235, 228, 228);
 }
 
-.product__specifications-size:active {
+.product-size__item:active {
   background-color: black;
   color: white;
 }

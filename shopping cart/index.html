@@ -11,7 +11,7 @@
       <figure class="product__image-container">
         <img
           class="product__image"
-          src="smartphone.jpg"
+          src="./product.jpg"
           alt="Latest smartphone"
         />
       </figure>
@@ -26,14 +26,24 @@
           TechOS. The device is built with premium materials, offering water and
           dust resistance.
         </div>
-        <div class="product__price">$999.99</div>
-        <ul class="product__specifications">
-          <li class="product__specifications-size">S</li>
-          <li class="product__specifications-size">M</li>
-          <li class="product__specifications-size">L</li>
-          <li class="product__specifications-size">XL</li>
-          <li class="product__specifications-size">XXL</li>
-        </ul>
+        <div class="product-price">
+          <div>
+            <span class="product-price__final">$99.00</span>
+            <span class="product-price__discount">-25%</span>
+          </div>
+          <p class="product-price__original">$132.00</p>
+        </div>
+        <div class="product-size">
+          <h2 class="product-size__heading">Choose Size</h2>
+          <ul class="product-size__list">
+            <li class="product-size__item">S</li>
+            <li class="product-size__item">M</li>
+            <li class="product-size__item">L</li>
+            <li class="product-size__item">XL</li>
+            <li class="product-size__item">XXL</li>
+          </ul>
+        </div>
+
         <button class="product__add-to-cart">Add To Cart</button>
       </section>
     </main>
